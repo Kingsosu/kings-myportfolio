@@ -823,6 +823,17 @@ button[type="submit"]:hover{
         margin-left: 0;
         margin-bottom: 0;
     }
+    .source-view {
+        justify-content: center;
+        flex-flow: column;
+        align-items: center;
+    }
+    .source-view .margin-bottom{
+        margin-bottom: 15px;
+    }
+    .source-view a {
+        padding: 8px 23px;
+    }
 
     .into-pic{
         width: 100%;
@@ -872,8 +883,5 @@ button[type="submit"]:hover{
     }
     .project-pic {
         height: 150px;
-    }
-    .source-view div{
-        margin-bottom: 10px;
     }
 }
