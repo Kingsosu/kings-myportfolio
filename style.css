@@ -632,6 +632,11 @@ button[type="submit"]:hover{
     align-self: center;
     justify-content: center;
 }
+.footer-image .fa{
+    font-size: 1rem;
+    color: #f9f9f9;
+    z-index: 1;
+}
 .image-center{
     width: 60%;
     height: 60%;  
