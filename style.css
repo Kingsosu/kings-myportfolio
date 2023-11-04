@@ -774,7 +774,7 @@ button[type="submit"]:hover{
     .nav-bar-link nav ul li a:hover{
         background-color: #f9f9f9;
         color: #001f40;
-        border: #ff8400;
+        border: 2px solid #ff8400;
     }
 }
 
