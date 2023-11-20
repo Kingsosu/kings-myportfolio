@@ -927,8 +927,11 @@ button[type="submit"]:active{
     padding: 5px 20px;
     font-family: 'Raleway';
     outline: none;
+    border: none;
     font-size: 1.5rem;
     font-weight: 500;
+    background-color: #ff8400;
+    border-radius: 25px;
 }
 .close {
     color: #ff8400;
@@ -1204,5 +1207,9 @@ button[type="submit"]:active{
     }
     .project-container .loop-project {
         width: 80% !important;
+    }
+
+    .modal-content {
+        width: 85%;
     }
 }
