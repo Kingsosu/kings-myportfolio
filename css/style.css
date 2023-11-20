@@ -31,6 +31,7 @@ header {
     width: 100%;
     background-color: #e6f2ff;
     position: relative;
+    overflow: hidden;
 }
 
 .header-section1{
@@ -41,12 +42,13 @@ header {
     max-width: 1440px;
     margin: 0 auto;
     top: 0;
+    overflow: hidden;
 }
 
 nav{
     width: 100%;
     background-color: #1e1e1ee7;
-    /* backdrop-filter: blur(100%); */
+    backdrop-filter: blur(30%);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -87,23 +89,7 @@ nav button{
 nav button:hover{
     color: #ff8400;
 }
-/* nav button:hover::before{
-    content: "";
-    position: absolute;
-    border: 1px solid #0070e7;
-    height: 25px;
-    width: 27px;
-}
-nav button.bars:hover::before{
-    top: 0px;
-    left: 0px;
-}
 
-nav button.cancel:hover::before{
-    border-radius: 25px;
-    top: 0px;
-    left: -2px;
-} */
 nav .developer{
     display: none;
 }
@@ -157,6 +143,7 @@ nav ul li a:hover{
     margin-top: 72px;
     padding-top: calc(10vh);
     padding-bottom: 10vh;
+    overflow: hidden;
 }
 .display-container{
     width: 100%;
@@ -692,18 +679,24 @@ footer{
 input[id="fullname"], 
 input[id="email"],
 textarea[id='message']{
+    font-size: 1.2rem;
+    font-family: 'Raleway' ;
+    line-height: 1.5;
     padding-left: 10px;
     width: 100%;
     height: 38px;
     border: none;
-    background-color: inherit;
+    background-color: transparent;
     border-bottom: 1px solid #1e1e1e;
+}
+textarea[id='message']{
+    height: 100px;
 }
 input[id="fullname"]:focus, 
 input[id="email"]:focus,
 textarea[id='message']:focus{
     outline: none;
-    background-color: inherit;
+    background-color: transparent;
 }
 textarea[id='message']{
     padding-top: 10px !important;
@@ -721,10 +714,9 @@ button[type="submit"]{
     transition: .5s ease;
 }
 button[type="submit"]:hover{
-    background-color: #f9f9f9;
+    background-color: gray;
     color: #0070e7;
     border: 1px solid #0070e7;
-    transform: scale(1.1);
 } 
 .contact-care{
     width: 40%;
@@ -880,6 +872,78 @@ button[type="submit"]:hover{
 }
 
 
+/* modal */
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+}
+
+/* body.modal-open {
+    overflow: hidden;
+} */
+
+.modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+    text-align: center;
+    position: relative;
+    line-height: 1.5;
+}
+
+.modal-content .bxs-badge-check{
+    font-size: 6rem;
+    color: green;
+}
+.modal-content p{
+    font-size: 1.3rem;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.modal-content #thank-you{
+    font-size: 1.5rem;
+    color: green;
+    font-weight: bold;
+}
+
+.modal-content #backButton{
+    margin-top: 20px;
+    padding: 5px 20px;
+    font-family: 'Raleway';
+    outline: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.close {
+    color: #ff8400;
+    position: absolute;
+    top: 0px;
+    right: 20px;
+    /* float: right; */
+    font-size: 2.6rem;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+  
+
 @media (max-width: 999px) {
     nav{
         padding: 5px 0;
@@ -965,7 +1029,7 @@ button[type="submit"]:hover{
 
 @media (max-width:768px){
     html{
-        font-size: 12px;
+        font-size: 14px;
     }
     .container {
         padding-left: 6%;
@@ -1021,11 +1085,11 @@ button[type="submit"]:hover{
         height: auto;
     }
 
-    .done-projects {
+    /* .done-projects {
         width: 46% !important;
         margin-left: 20px;
         margin-bottom: 10px;
-    }
+    } */
     .source-view a {
         padding: 7px 22px;
     }
@@ -1072,15 +1136,9 @@ button[type="submit"]:hover{
         flex-direction: row;
         align-items: center;
     }
-    .project-container .loop-project {
-        width: 45% !important;
-        flex-shrink: 0;
-    }
 }
 
-@media screen and (max-width: 414px) {
-
-    
+@media screen and (max-width: 500px) {
     nav{
         padding: 0px 0px;
     }
@@ -1088,12 +1146,12 @@ button[type="submit"]:hover{
     .header-section2 {
         margin-top: 50px;
     }   
-    .section4-container {
+    /* .section4-container {
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-    }
-    .done-projects {
+    } */
+    /* .done-projects {
         width: 85% !important;
         margin-left: 0;
         margin-bottom: 0;
@@ -1108,7 +1166,7 @@ button[type="submit"]:hover{
     }
     .source-view a {
         padding: 8px 23px;
-    }
+    } */
 
     .into-pic{
         width: 100%;
@@ -1125,7 +1183,7 @@ button[type="submit"]:hover{
     }
 
     .links-footer{
-        line-height: 28px;
+        line-height: 2;
     }
 
     .links-footer-container {
@@ -1142,30 +1200,5 @@ button[type="submit"]:hover{
     }
     .project-container .loop-project {
         width: 80% !important;
-        flex-shrink: 0;
-    }
-}
-
-@media screen and (max-width: 912px) {
-    .section4-container {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .done-projects {
-        width: 40%;
-    }
-}
-
-@media screen and (max-width: 300px) {
-    .source-view {
-        justify-content: center;
-        flex-flow: column;
-        align-items: center;
-    }
-    .project-detials p{
-        line-height: 20px !important;
-    }
-    .project-pic {
-        height: 150px;
     }
 }

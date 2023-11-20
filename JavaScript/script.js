@@ -55,22 +55,49 @@ function calllinks(link){
 } 
 
 
+// modal and form validation
+document.getElementById('submit-message').addEventListener('submit', function(event) {
+    event.preventDefault(); 
+
+    fullname = document.getElementById('fullname').value;
+    email = document.getElementById('email').value;
+    message = document.getElementById('message').value;
+
+    if(fullname === '' || email === '' || message === ''){
+        window.alert('You can\'t submit empty form');
+    }
+    else{
+        displaySuccessModal();
+    }
+
+  });
+
+function displaySuccessModal() {
+    var modal = document.getElementById('successModal');
+    modal.style.display = 'flex';
+    document.body.style.overflow = 'hidden'; // Disable scrolling on the body
+
+    // Close the modal when the close button or the back button is clicked
+    var closeButton = document.querySelector('.close');
+    var backButton = document.getElementById('backButton');
+
+    closeButton.onclick = function() {
+        modal.style.display = 'none';
+        document.body.style.overflow = 'auto';
+    }
+
+    backButton.onclick = function() {
+        modal.style.display = 'none';
+        document.body.style.overflow = 'auto';
+    }
+}
+
+
 document.addEventListener("DOMContentLoaded", function () {
 
     handleClick();
 
-    // Handle message from user
-    submitMessage.addEventListener('submit', function(event){
-        event.preventDefault();
-        fullname = submitMessage.elements['fullname'].value;
-        email = submitMessage.elements['email'].value;
-        message = submitMessage.elements['message'].value;
-    
-        if(fullname === '' || email === '' || message === ''){
-            window.alert('You can\'t submit empty form');
-        }    
-
-    }) 
+    // Handle message from user 
 
     // Handle nav-bar links 
     const navLink = document.querySelectorAll('nav ul li a');
