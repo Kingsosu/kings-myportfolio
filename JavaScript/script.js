@@ -53,6 +53,48 @@ function calllinks(link){
         }            
     });
 } 
+document.addEventListener("DOMContentLoaded", function () {
+
+    handleClick();
+
+
+    // Handle nav-bar links 
+    const navLink = document.querySelectorAll('nav ul li a');
+
+    navLink.forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+
+            const targetId = link.getAttribute("href").substring(1);
+            const targetSection = document.getElementById(targetId)
+
+            if(targetSection){
+                targetSection.scrollIntoView({behavior: "smooth"});
+                if(menu.classList.contains("active")){
+                    menu.classList.remove("active");
+                    menu.style.display = 'none';
+
+                    menuToggle.style.display = 'block';
+
+                }
+            }
+        });
+    });
+
+    // Handle links
+    const contactLink = document.querySelectorAll('.message-name div a');
+
+    contactLink.forEach(link => {
+        calllinks(link);
+    });
+
+    const footerLink = document.querySelectorAll('.footer div a');
+
+    footerLink.forEach(link => {
+        calllinks(link)
+    });
+
+});
 
 
 // modal and form validation
@@ -96,7 +138,7 @@ function submitForm() {
     })
     .catch(error => {
         console.error("Error:", error);
-        displayErrorModal("There was a problem submitting the form.");
+        displayErrorModal();
     });
 }
 
@@ -121,8 +163,8 @@ function displaySuccessModal() {
 
 function displayErrorModal(errorMessage) {
     var modal = document.getElementById('errorModal');
-    var errorText = document.getElementById('errorText');
-    errorText.textContent = errorMessage; 
+/*  var errorText = document.getElementById('errorText');
+    errorText.textContent = errorMessage;  */
 
     modal.style.display = 'flex';
     document.body.style.overflow = 'hidden';
@@ -134,51 +176,4 @@ function displayErrorModal(errorMessage) {
         document.body.style.overflow = 'auto';
     }
 }
-
-
-
-
-document.addEventListener("DOMContentLoaded", function () {
-
-    handleClick();
-
-    // Handle message from user 
-
-    // Handle nav-bar links 
-    const navLink = document.querySelectorAll('nav ul li a');
-
-    navLink.forEach(link => {
-        link.addEventListener('click', (e) => {
-            e.preventDefault();
-
-            const targetId = link.getAttribute("href").substring(1);
-            const targetSection = document.getElementById(targetId)
-
-            if(targetSection){
-                targetSection.scrollIntoView({behavior: "smooth"});
-                if(menu.classList.contains("active")){
-                    menu.classList.remove("active");
-                    menu.style.display = 'none';
-
-                    menuToggle.style.display = 'block';
-
-                }
-            }
-        });
-    });
-
-    // Handle links
-    const contactLink = document.querySelectorAll('.message-name div a');
-
-    contactLink.forEach(link => {
-        calllinks(link);
-    });
-
-    const footerLink = document.querySelectorAll('.footer div a');
-
-    footerLink.forEach(link => {
-        calllinks(link)
-    });
-
-});
 
