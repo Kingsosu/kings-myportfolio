@@ -32,12 +32,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
     
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
 
-    
     <link rel="icon" href="./images/KS-ICON.png">
 
     <!-- title -->
@@ -50,28 +50,31 @@
     <header class="exceed">
         <!-- Header navigation bar -->
         <section class="header-section1">
-            <div class="header-nav container">
-                <div class="nav-menu">
+            <nav class="container">
+                <div class="menu-toggle">
                     <a class="nav-brand" href="index.html"><img src="./images/KS_LOGO.png" alt=""></a>
-                    <div class="menu-toggle" id="menu-toggle">
-                        <button>
-                            <img src="./images/menu.png" alt="menu icon">
-                        </button>
-                    </div>
                 </div>
+                <ul>
+                    <button class="cancel"><i class='bx bx bx-x'></i></button>
+                    <li><a href="#about">ABOUT ME</a></li>
+                    <li><a href="#skills">SKILLS</a></li>
+                    <li><a href="#projects">PROJECTS</a></li>
+                    <li><a href="#milestones">MILESTONES</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
 
-                <div class="nav-bar-link" id="nav-bar-link">
-                    <nav>
-                        <ul>
-                            <li><a href="#about">ABOUT ME</a></li>
-                            <li><a href="#skills">SKILLS</a></li>
-                            <li><a href="#projects">PROJECTS</a></li>
-                            <li><a href="#milestones">MILESTONES</a></li>
-                            <li><a href="#contact">CONTACT</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
+                    <div class="developer">
+                        <p>Design & Develop @</p>
+                        <div class="developer-img">
+                            <a href="https://github.com/Kingsosu/kings-myportfolio" target="_blank">
+                                <img src="./images/KSCODE.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </ul>
+
+                <button class="bars"><i class="bx bx-menu-alt-right"></i></button>
+            
+            </nav>
         </section>
 
 
@@ -84,7 +87,8 @@
                         <p>
                             Welcome to my portfolio! <strong>Kings Osuolale</strong> is a <strong>Full Stack Developer</strong> with a fervent dedication to crafting <strong>visually impressive</strong> and <strong>user-friendly</strong> web experiences. Possessing a <strong>distinctive</strong> fusion of technical expertise and creative flair, I am <strong>assured</strong> in my capability to provide <strong>customized solutions</strong> that precisely cater to my clients' needs.
                         </p>
-                        <button type="submit"><i class="fas fa-envelope fa-lg"></i> &nbsp;Contact Me</button>
+                        <!-- <button type="submit"><i class='bx bxs-message-square-detail'></i> &nbsp;Contact Me</button> -->
+                        <a href="#contact"><i class='bx bxs-message-square-detail'></i> &nbsp;Contact Me</a>
                     </div>
                 </div>
                <div class="kings-pic-container">
@@ -241,7 +245,7 @@
             <div class="h2-container4">
                 <div class="main-section4-th"><h2>Projects</h2></div>
             </div>            
-            <div class="section4-container container">
+            <!-- <div class="section4-container container">
                 <div class="done-projects">
                     <div class="project-pic"> 
                         <div>
@@ -292,6 +296,28 @@
                         </div>
 
                     </div>
+                </div>
+            </div> -->
+            <div class="project-container project-index">
+
+                <div class="loop-project">
+                    <a href="">
+                        <div class="project-img">
+                            <img src="./images/KSCODE.png" alt="food-pic">
+                        </div>
+                    </a>
+    
+                    <div class="project-detials">
+                        <h2>Color Flipper</h2>
+                        <a href="https://kingsosu.github.io/Color-Flipper/index.html" target="_blank">kingsosu.github.io/Color-Flipper/</a>
+                    </div>               
+                </div>
+            </div> 
+
+            <!-- see work links -->
+            <div class="see-works">
+                <div>
+                    <p><a href="./project.html">See other works &nbsp;&nbsp;<i class="bx bx-arrow-back"></i></a></p>
                 </div>
             </div>
         </section>        
@@ -347,7 +373,7 @@
         
     </main>
 
-    <footer class="exceed" id="contact">
+    <footer class="exceed footer" id="contact">
         <section class="footer-section1">
             <div class="h2-container1">
                 <div class="footer-section1-th"><h2>Contact</h2></div>
@@ -358,7 +384,7 @@
                 </div>
                 <div class="into-pic">
                     <div class="contact-info">
-                        <form action="" method="">
+                        <form action="" method="" name="submit-message">
                             <label for="fullname">Full Name</label> <br>
                             <input type="text" name="fullname" id="fullname"> <br> <br>
                             
@@ -368,7 +394,7 @@
                             <label for="message">Message</label> <br>
                             <textarea name="message" id="message"></textarea> <br> <br> <br>
 
-                            <button type="submit"><i class="fas fa-paper-plane"></i>  Send Message</button>
+                            <button type="submit" name="button"><i class="fas fa-paper-plane"></i> &nbsp;Send Message</button>
                         </form>
                     </div>
                     <div class="contact-care">
@@ -404,20 +430,20 @@
                 <div class="links-footer boxthree">
                     <p>Get in touch</p>
                     <ul class="footer-social">
-                        <li><a href="https://github.com/Kingsosu" target="_blank"><i class="fa fa-github-square"></i> &nbsp;Git Hub</a></li>
-                        <li><a href="" target="_blank"><i class="fa fa-linkedin-square"></i> &nbsp; Linkedin</a></li>
-                        <li><a href="https://x.com/KingsOsuolale?t=7C4YGckyUbn0dCrDL72sdw&s=08" target="_blank"><i class="fa fa-twitter-square"></i> &nbsp;Twitter</a></li>
-                        <li><a href="https://api.whatsapp.com/send?phone=2348154589195&text=Hi%2C%20I%27m%20.......%20I%20will%20like%20to%20work%20with%20you....." target="_blank"><i class="fab fa-whatsapp-square"></i> &nbsp;Whatsapp</a></li>
-                        <li><a href="https://www.facebook.com/kings.osuolale?mibextid=ZbWKwL" target="_blank"><i class="fa fa-facebook-square"></i> &nbsp;Facebook</a></li>
+                        <li><a href="https://github.com/Kingsosu" target="_blank"><i class='bx bxl-github'></i>&nbsp; Git Hub</a></li>
+                        <li><a href="" target="_blank"><i class='bx bxl-linkedin-square'></i></i>&nbsp; Linkedin</a></li>
+                        <li><a href="https://x.com/KingsOsuolale?t=7C4YGckyUbn0dCrDL72sdw&s=08" target="_blank"><i class="fa fa-twitter-square"></i>&nbsp; Twitter</a></li>
+                        <li><a href="https://api.whatsapp.com/send?phone=2348154589195&text=Hi%2C%20I%27m%20.......%20I%20will%20like%20to%20work%20with%20you....." target="_blank"><i class="fab fa-whatsapp-square"></i>&nbsp; Whatsapp</a></li>
+                        <li><a href="https://www.facebook.com/kings.osuolale?mibextid=ZbWKwL" target="_blank"><i class='bx bxl-facebook-square'></i>&nbsp; Facebook</a></li>
                     </ul>
                 </div>   
             </div>
         </section>
         <section class="footer-section3">
-            <p>&copy; Kings Osuolale 2023</p>
+            <p>&copy; Kings Osuolale <span id="date"></span></p>
         </section>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="./JavaScript/script.js"></script>
 </body>
 </html>
