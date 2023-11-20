@@ -187,10 +187,10 @@ nav ul li a:hover{
     transition: .5s ease;
 }
 .message-name div a:hover{
-    background-color: #f9f9f9;
-    color: #0070e7;
-    border: 1px solid #0070e7;
-} 
+    background-color: #ffb260;
+    border: 1px solid #ff8400;
+    color: black;
+}
 
 .message-name img{
     width: 25px;
@@ -711,13 +711,14 @@ button[type="submit"]{
     border: none;
     font-size: 1.2rem;
     font-weight: 500;
-    transition: .5s ease;
+    transition: .1s ease;
 }
-button[type="submit"]:hover{
-    background-color: gray;
-    color: #0070e7;
-    border: 1px solid #0070e7;
+button[type="submit"]:active{
+    background-color: #ffb260;
+    color: black;
+    border: 1px solid #ff8400;
 } 
+
 .contact-care{
     width: 40%;
 }
@@ -887,17 +888,14 @@ button[type="submit"]:hover{
     background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
 }
 
-/* body.modal-open {
-    overflow: hidden;
-} */
-
 .modal-content {
     background-color: white;
     margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 60%;
+    width: 70%;
     text-align: center;
+    border-radius: 20px;
     position: relative;
     line-height: 1.5;
 }
@@ -905,6 +903,12 @@ button[type="submit"]:hover{
 .modal-content .bxs-badge-check{
     font-size: 6rem;
     color: green;
+    padding-bottom: 10px;
+}
+.modal-content .bxs-error{
+    font-size: 6rem;
+    color: red;
+    padding-bottom: 10px;
 }
 .modal-content p{
     font-size: 1.3rem;

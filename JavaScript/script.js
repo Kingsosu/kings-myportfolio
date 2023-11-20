@@ -57,27 +57,54 @@ function calllinks(link){
 
 // modal and form validation
 document.getElementById('submit-message').addEventListener('submit', function(event) {
-    event.preventDefault(); 
+    event.preventDefault(); // Prevent the default form submission behavior
+    
+    var fullname = document.getElementById('fullname').value;
+    var email = document.getElementById('email').value;
+    var message = document.getElementById('message').value;
 
-    fullname = document.getElementById('fullname').value;
-    email = document.getElementById('email').value;
-    message = document.getElementById('message').value;
-
-    if(fullname === '' || email === '' || message === ''){
-        window.alert('You can\'t submit empty form');
+    if (fullname === '' || email === '' || message === '') {
+        window.alert('You can\'t submit an empty form');
+    } else {
+        submitForm();
     }
-    else{
-        displaySuccessModal();
-    }
+});
 
-  });
+function submitForm() {
+    var form = document.getElementById('submit-message');
+    var formData = new FormData(form);
+
+    fetch(form.action, {
+        method: form.method,
+        body: formData,
+        headers: {
+            'Accept': 'application/json'
+        }
+    })
+    .then(response => {
+        if (response.ok) {
+            displaySuccessModal();
+            form.reset();
+        } else {
+            return response.json(); // Parse response body as JSON
+        }
+    })
+    .then(data => {
+        if (data && data.error) {
+            displayErrorModal(data.error);
+        }
+    })
+    .catch(error => {
+        console.error("Error:", error);
+        displayErrorModal("There was a problem submitting the form.");
+    });
+}
 
 function displaySuccessModal() {
     var modal = document.getElementById('successModal');
     modal.style.display = 'flex';
-    document.body.style.overflow = 'hidden'; // Disable scrolling on the body
+    document.body.style.overflow = 'hidden';
 
-    // Close the modal when the close button or the back button is clicked
     var closeButton = document.querySelector('.close');
     var backButton = document.getElementById('backButton');
 
@@ -91,6 +118,24 @@ function displaySuccessModal() {
         document.body.style.overflow = 'auto';
     }
 }
+
+function displayErrorModal(errorMessage) {
+    var modal = document.getElementById('errorModal');
+    var errorText = document.getElementById('errorText');
+    errorText.textContent = errorMessage; 
+
+    modal.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+
+    var closeButton = document.querySelector('.close-error');
+
+    closeButton.onclick = function() {
+        modal.style.display = 'none';
+        document.body.style.overflow = 'auto';
+    }
+}
+
+
 
 
 document.addEventListener("DOMContentLoaded", function () {
