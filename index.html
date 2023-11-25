@@ -1,468 +1,588 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
 
-    <!-- meta tags -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Welcome to the portfolio of Kings Osuolale, a Full Stack Developer with a fervent dedication to crafting visually impressive and user-friendly web experiences.">
-    <meta name="keywords" content="web development, UI/UX design, Full Stack Developer, portfolio, frontend developer">
-    <meta http-equiv="Content-Language" content="en">
-    <meta name="robots" content="index, follow">
-    <meta name="author" content="Kings Osuolale, 'Suleiman Mohammed', 'Mohammed', 'Suleiman' ">
-    <meta name="copyright" content="Copyright © 2023 Kings Osuolale">
+    <head>
 
-    <meta property="og:title" content="Kings Osuolale - Full Stack Developer">
-    <meta property="og:description" content="Web Developer & UI/UX Designer">
-    <meta property="og:url" content="https://kings-myportfolio.vercel.app/">
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Kings Osuolale">
-    <meta property="og:locale" content="en_US">
+        <!-- meta tags -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description"
+            content="Welcome to the portfolio of Kings Osuolale, a Full Stack Developer with a fervent dedication to crafting visually impressive and user-friendly web experiences.">
+        <meta name="keywords" content="web development, UI/UX design, Full Stack Developer, portfolio, frontend developer">
+        <meta http-equiv="Content-Language" content="en">
+        <meta name="robots" content="index, follow">
+        <meta name="author" content="Kings Osuolale, 'Suleiman Mohammed', 'Mohammed', 'Suleiman' ">
+        <meta name="copyright" content="Copyright © 2023 Kings Osuolale">
 
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@KingsOsuolale">
-    <meta name="twitter:title" content="Kings Osuolale - Full Stack Developer">
-    <meta name="twitter:description" content="Web Developer & UI/UX Designer">
-    <!-- <meta name="twitter:image" content="https://www.yourwebsite.com/images/twitter-card-image.jpg"> -->
+        <meta property="og:title" content="Kings Osuolale - Full Stack Developer">
+        <meta property="og:description" content="Web Developer & UI/UX Designer">
+        <meta property="og:url" content="https://kings-myportfolio.vercel.app/">
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="Kings Osuolale">
+        <meta property="og:locale" content="en_US">
 
-
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="./css/style.css">
-    
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
-
-    <link rel="icon" href="./images/KS-ICON.png">
-
-    <!-- title -->
-    <title>Kings Osuolale - Full Stack Web Developer & UI/UX Designer</title>
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@KingsOsuolale">
+        <meta name="twitter:title" content="Kings Osuolale - Full Stack Developer">
+        <meta name="twitter:description" content="Web Developer & UI/UX Designer">
+        <!-- <meta name="twitter:image" content="https://www.yourwebsite.com/images/twitter-card-image.jpg"> -->
 
 
 
-</head>
-<body>
-    <header class="exceed">
-        <!-- Header navigation bar -->
-        <section class="header-section1">
-            <nav class="container">
-                <div class="menu-toggle">
-                    <a class="nav-brand" href="index.html"><img src="./images/KS_LOGO.png" alt=""></a>
-                </div>
-                <ul>
-                    <button class="cancel"><i class='bx bx bx-x'></i></button>
-                    <li><a href="#about">ABOUT ME</a></li>
-                    <li><a href="#skills">SKILLS</a></li>
-                    <li><a href="#projects">PROJECTS</a></li>
-                    <li><a href="#milestones">MILESTONES</a></li>
-                    <li><a href="#contact">CONTACT</a></li>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-                    <div class="developer">
-                        <p>Design & Develop @</p>
-                        <div class="developer-img">
-                            <a href="https://github.com/Kingsosu/kings-myportfolio" target="_blank">
-                                <img src="./images/KSCODE.png" alt="">
-                            </a>
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+        
+        <link rel="preload" href="./css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+        <!-- Preload JavaScript -->
+        <link rel="preload" href="./JavaScript/script.js" as="script">
+
+        <!-- Preload SVG or other critical resources -->
+        <!-- <link rel="preload" href="./images/ks-svg.svg" as="image/svg+xml"> -->
+
+        <link rel="icon" href="./images/KS-ICON.png" loading="lazy">
+
+        <!-- title -->
+        <title>Kings Osuolale - Full Stack Web Developer & UI/UX Designer</title>
+
+    </head>
+
+    <body>
+
+        <!-- <div class="loading-container" id="loading-container">
+            <p class="kings-effect"></p>
+        </div> -->
+        <div class="loading-page" id="loading-page">
+            <svg id="svg" xmlns="http://www.w3.org/2000/svg" width="176" height="83" viewBox="0 0 176 83" fill="none">
+                <path id="loaderPath" fill-rule="evenodd" clip-rule="evenodd" d="M145.741 50.6373H96.5923L75.6592 25.6373L96.5923 0.637268H174.659L160.187 18.3935L105.678 18.401L99.6188 25.6373L105.678 32.8736L154.833 32.8811L175.733 57.842L154.798 82.8421H122.344L107.944 65.0859L145.714 65.0783L151.773 57.842L145.741 50.6373Z" fill="#001F40"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.697754 0.855274H21.2174V39.4829L53.998 0.855274L83.295 0.637268L57.5432 31.0935L100.773 82.7594L74.4304 82.7428L44.1005 46.3704L21.2174 73.0739V73.2904L13.3797 82.8421H0.697754V0.855274Z" fill="#001F40"/>
+            </svg>          
+            <div class="loading-naming-container">
+                <p>code</p>
+            </div>
+        </div>
+
+        <header class="exceed hide-content">
+            <!-- Header navigation bar -->
+            <section class="header-section1">
+                <nav class="container">
+                    <div class="menu-toggle">
+                        <a class="nav-brand" href="index.html"><img src="./images/KS_LOGO.png" alt=""></a>
+                    </div>
+                    <ul>
+                        <button class="cancel"><i class='bx bx bx-x'></i></button>
+                        <li><a href="#about">ABOUT ME</a></li>
+                        <li><a href="#skills">SKILLS</a></li>
+                        <li><a href="#projects">PROJECTS</a></li>
+                        <li><a href="#milestones">MILESTONES</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+
+                        <div class="developer">
+                            <p>Design & Develop @</p>
+                            <div class="developer-img">
+                                <a href="https://github.com/Kingsosu/kings-myportfolio" target="_blank">
+                                    <img src="./images/KSCODE.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </ul>
+
+                    <button class="bars"><i class="bx bx-menu-alt-right"></i></button>
+
+                </nav>
+            </section>
+
+
+            <!-- Header message -->
+            <section class="header-section2 container">
+                <div class="display-container">
+                    <div class="message-name">
+                        <h1>Hi, I am <br> <span id="developer-name">Kings Osuolale,</span><br><span class="developer-skills"></span></h1>   
+                        <div>
+                            <p>
+                                Welcome to my portfolio! <strong>Kings Osuolale</strong> is a <strong>Full Stack
+                                Developer</strong> with a fervent dedication to crafting <strong>visually
+                                impressive</strong> and <strong>user-friendly</strong> web experiences. Possessing a
+                                <strong>distinctive</strong> fusion of technical expertise and creative flair, I am
+                                <strong>assured</strong> in my capability to provide <strong>customized solutions</strong>
+                                that precisely cater to my clients' needs.
+                            </p>
+                            <!-- <button type="submit"><i class='bx bxs-message-square-detail'></i> &nbsp;Contact Me</button> -->
+                            <a href="#contact"><i class='bx bxs-message-square-detail'></i> &nbsp;Contact Me</a>
                         </div>
                     </div>
-                </ul>
+                    <div class="kings-pic-container">
+                        <div class="kings-pic">
+                            <img src="./images/pics1.png" alt="kings portfolio">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </header>
 
-                <button class="bars"><i class="bx bx-menu-alt-right"></i></button>
-            
-            </nav>
-        </section>
+        <main class="exceed hide-content">
+            <!-- section 1 -->
+            <section class="main-section1" id="about">
+                <h2>About Me</h2>
+                <div class="section1-container container">
+                    <div class="exp-pro-container">
+                        <div class="flex-center">
+                            <div class="exp-pro">
+                                <div>
+                                    <img src="./images/experience.png" alt="experience icon">
+                                </div>
+                                <div class="text">
+                                    <p> <span>1 Year</span> Job <br>Experience</p>
+                                </div>
+                            </div>
+                            <div class="exp-pro">
+                                <div>
+                                    <img src="./images/project.png" alt="experience icon">
+                                </div>
+                                <div class="text">
+                                    <p> <span>8+</span> Project <br>Completed</p>
+                                </div>
+                            </div>
+                        </div>
 
-
-        <!-- Header message -->
-        <section class="header-section2 container">
-            <div class="display-container">
-                <div class="message-name">
-                    <h1>Hi, I am <br> <span>Kings Osuolale,</span> <br> Web Developer & UI/UX Designer</h1>
-                    <div>
+                    </div>
+                    <div class="strongest-skills">
+                        <h3>What are my key strengths and <span>skills?</span></h3>
                         <p>
-                            Welcome to my portfolio! <strong>Kings Osuolale</strong> is a <strong>Full Stack Developer</strong> with a fervent dedication to crafting <strong>visually impressive</strong> and <strong>user-friendly</strong> web experiences. Possessing a <strong>distinctive</strong> fusion of technical expertise and creative flair, I am <strong>assured</strong> in my capability to provide <strong>customized solutions</strong> that precisely cater to my clients' needs.
+                            <br>
+                            My notable strengths as a Full Stack Developer include my aptitude for critical thinking and
+                            problem-solving. I excel in deconstructing intricate projects into manageable components and
+                            devising innovative solutions for challenges that arise. Additionally, my strong organizational
+                            skills and attention to detail enable me to consistently complete tasks promptly and to exacting
+                            standards.
+                            <br> <br>
+
+                            In the realm of programming, I possess proficiency in an array of languages and frameworks, such
+                            as HTML, CSS, JavaScript, Python, C++, C, and Java. I have hands-on experience working with
+                            popular technologies, including MongoDB, Express, React, and Django. I'm adept in UI/UX
+                            development and possess the adaptability to swiftly embrace new technologies and frameworks,
+                            drawing from a broad spectrum of tech knowledge. <br> <br>
+
+                            Effective communication is another key asset, allowing me to collaborate seamlessly with clients
+                            and team members to comprehend their requirements and translate them into functional
+                            specifications. Overall, my confidence lies in my ability to deliver high-quality web solutions
+                            that align with client needs and surpass their expectations."
                         </p>
-                        <!-- <button type="submit"><i class='bx bxs-message-square-detail'></i> &nbsp;Contact Me</button> -->
-                        <a href="#contact"><i class='bx bxs-message-square-detail'></i> &nbsp;Contact Me</a>
                     </div>
                 </div>
-               <div class="kings-pic-container">
-                    <div class="kings-pic">
-                        <img src="./images/pics1.png" alt="kings portfolio">
+
+            </section>
+
+            <!-- main section 2 -->
+            <section class="main-section2">
+                <h2>My Bio</h2>
+                <div class="section2-container container">
+                    <div class="my-pic">
+                        <img src="./images/kingspic.png" alt="kings image">
                     </div>
-               </div>
-            </div>
-        </section>
-    </header>
-
-    <main class="exceed">
-          <!-- section 1 -->
-          <section class="main-section1" id="about">
-            <h2>About Me</h2>
-            <div class="section1-container container">
-                <div class="exp-pro-container">
-                    <div class="flex-center">
-                        <div class="exp-pro">
-                            <div>
-                                <img src="./images/experience.png" alt="experience icon">
-                            </div>
-                            <div class="text">
-                                <p> <span>1 Year</span> Job <br>Experience</p>
-                            </div>
-                        </div>
-                        <div class="exp-pro">
-                            <div>
-                                <img src="./images/project.png" alt="experience icon">
-                            </div>
-                            <div class="text">
-                                <p> <span>8+</span> Project <br>Completed</p>
-                            </div>
-                        </div>
+                    <div class="bio-container">
+                        <h3><span>Biography,</span> <br> a few word</h3>
+                        <p>
+                            <br>
+                            Hello, I'm Sulieman Mohammed, better known as King's Osuolale, a Full Stack Developer hailing
+                            from Nigeria. I'm currently pursuing my undergraduate studies at UNIMAID, majoring in Computer
+                            Science. Here, I'm building a strong foundation in this field and nurturing my passion for
+                            crafting visually appealing and user-friendly web experiences. With a proven track record of
+                            achievements, I'm devoted to leveraging my skills and expertise to deliver innovative and
+                            effective solutions for my clients.
+                            <br> <br>
+                            I actively participate in the FOSS community and am an engaged member of Google Developer
+                            Student Clubs (GDSC) Unimaid, recognized for my diverse knowledge and interests. Continuously
+                            seeking new opportunities to enhance my skills and expand my knowledge.
+                            <br> <br>
+                            During my leisure time, I indulge in hobbies such as photography, football, and traveling. My
+                            dedication to learning remains unwavering, always searching for ways to enhance my skills and
+                            knowledge. Beyond my technical proficiencies, I'm a dependable, team-oriented individual, ready
+                            to collaborate with both team members and clients to ensure projects meet the highest standards.
+                            I'm excited about the prospect of collaborating with you to create something extraordinary.
+                        </p>
                     </div>
-
                 </div>
-                <div class="strongest-skills"> 
-                    <h3>What are my key strengths and <span>skills?</span></h3>
-                    <p>
-                        <br>
-                        My notable strengths as a Full Stack Developer include my aptitude for critical thinking and problem-solving. I excel in deconstructing intricate projects into manageable components and devising innovative solutions for challenges that arise. Additionally, my strong organizational skills and attention to detail enable me to consistently complete tasks promptly and to exacting standards.
-                        <br> <br>
+            </section>
 
-                        In the realm of programming, I possess proficiency in an array of languages and frameworks, such as HTML, CSS, JavaScript, Python, C++, C, and Java. I have hands-on experience working with popular technologies, including MongoDB, Express, React, and Django. I'm adept in UI/UX development and possess the adaptability to swiftly embrace new technologies and frameworks, drawing from a broad spectrum of tech knowledge. <br> <br>
-
-                        Effective communication is another key asset, allowing me to collaborate seamlessly with clients and team members to comprehend their requirements and translate them into functional specifications. Overall, my confidence lies in my ability to deliver high-quality web solutions that align with client needs and surpass their expectations."
-                    </p>
+            <!-- main section 3 -->
+            <section class="main-section3" id="skills">
+                <div class="h2-container3">
+                    <div class="main-section3-th">
+                        <h2>Skills</h2>
+                    </div>
                 </div>
-            </div>
-            
-          </section>
-
-          <!-- main section 2 -->
-          <section class="main-section2">
-            <h2>My Bio</h2>
-            <div class="section2-container container">
-                <div class="my-pic">
-                    <img src="./images/kingspic.png" alt="kings image">
-                </div>
-                <div class="bio-container">
-                    <h3><span>Biography,</span> <br> a few word</h3>
-                    <p>
-                        <br>
-                        Hello, I'm Sulieman Mohammed, better known as King's Osuolale, a Full Stack Developer hailing from Nigeria. I'm currently pursuing my undergraduate studies at UNIMAID, majoring in Computer Science. Here, I'm building a strong foundation in this field and nurturing my passion for crafting visually appealing and user-friendly web experiences. With a proven track record of achievements, I'm devoted to leveraging my skills and expertise to deliver innovative and effective solutions for my clients.
-                        <br> <br>
-                        I actively participate in the FOSS community and am an engaged member of Google Developer Student Clubs (GDSC) Unimaid, recognized for my diverse knowledge and interests. Continuously seeking new opportunities to enhance my skills and expand my knowledge.
-                        <br> <br>
-                        During my leisure time, I indulge in hobbies such as photography, football, and traveling. My dedication to learning remains unwavering, always searching for ways to enhance my skills and knowledge. Beyond my technical proficiencies, I'm a dependable, team-oriented individual, ready to collaborate with both team members and clients to ensure projects meet the highest standards. I'm excited about the prospect of collaborating with you to create something extraordinary.
-                    </p>
-                </div>
-            </div>
-          </section>
-
-          <!-- main section 3 -->
-        <section class="main-section3" id="skills">
-            <div class="h2-container3">
-                <div class="main-section3-th"><h2>Skills</h2></div>
-            </div>
-            <div class="section3-container container">
-                <div class="skill-gen-container">
-                    <h3>Programming Skills</h3>
-                    <div class="skill-container">
+                <div class="section3-container container">
+                    <div class="skill-gen-container">
+                        <h3>Programming Skills</h3>
+                        <div class="skill-container">
                             <div class="image-type">
                                 <div class="skill-image"> <img src="./images/react-js.png" alt="react-icon"></div>
-                                <div class="skill-type"> <p>React.js</p></div>
+                                <div class="skill-type">
+                                    <p>React.js</p>
+                                </div>
                             </div>
                             <div class="image-type">
                                 <div class="skill-image"> <img src="./images/js.png" alt="js-icon"></div>
-                                <div class="skill-type"> <p>JavaScript</p></div>
+                                <div class="skill-type">
+                                    <p>JavaScript</p>
+                                </div>
                             </div>
                             <div class="image-type">
                                 <div class="skill-image"> <img src="./images/python.png" alt="python-icon"></div>
-                                <div class="skill-type"> <p>Python</p></div>
+                                <div class="skill-type">
+                                    <p>Python</p>
+                                </div>
                             </div>
                             <div class="image-type">
                                 <div class="skill-image"> <img src="./images/django.png" alt="django-icon"></div>
-                                <div class="skill-type"> <p>Django</p></div>
+                                <div class="skill-type">
+                                    <p>Django</p>
+                                </div>
                             </div>
                             <div class="image-type">
                                 <div class="skill-image"> <img src="./images/html-5.png" alt="html-icon"></div>
-                                <div class="skill-type"> <p>HTML</p></div>
+                                <div class="skill-type">
+                                    <p>HTML</p>
+                                </div>
                             </div>
                             <div class="image-type">
                                 <div class="skill-image"> <img src="./images/css-3.png" alt="css-icon"></div>
-                                <div class="skill-type"> <p>CSS</p></div>
+                                <div class="skill-type">
+                                    <p>CSS</p>
+                                </div>
                             </div>
                             <div class="image-type">
                                 <div class="skill-image"> <img src="./images/c++.png" alt="c++ icon"></div>
-                                <div class="skill-type"> <p>C++</p></div>
+                                <div class="skill-type">
+                                    <p>C++</p>
+                                </div>
                             </div>
+                        </div>
                     </div>
-                </div>
-                <div class="skill-gen-container">
-                    <h3>Tools and Other Skills</h3>
-                    <div class="skill-container">
+                    <div class="skill-gen-container">
+                        <h3>Tools and Other Skills</h3>
+                        <div class="skill-container">
                             <div class="image-type">
                                 <div class="skill-image"> <img src="./images/ui-ux.png" alt="ui/ux-icon"></div>
-                                <div class="skill-type"> <p>UI/UX</p></div>
+                                <div class="skill-type">
+                                    <p>UI/UX</p>
+                                </div>
                             </div>
                             <div class="image-type">
                                 <div class="skill-image"> <img src="./images/figma.png" alt="figma-icon"></div>
-                                <div class="skill-type"> <p>Figma</p></div>
+                                <div class="skill-type">
+                                    <p>Figma</p>
+                                </div>
                             </div>
                             <div class="image-type">
                                 <div class="skill-image"> <img src="./images/git.png" alt="git-icon"></div>
-                                <div class="skill-type"> <p>Git</p></div>
+                                <div class="skill-type">
+                                    <p>Git</p>
+                                </div>
                             </div>
+                        </div>
                     </div>
-                </div>
 
-                <div class="skill-gen-container">
-                    <h3>Communication Skills</h3>
-                    <div class="skill-container">
+                    <div class="skill-gen-container">
+                        <h3>Communication Skills</h3>
+                        <div class="skill-container">
                             <div class="image-type">
                                 <div class="skill-image"> <img src="./images/lang-en.png" alt="english-icon"></div>
-                                <div class="skill-type"> <p>English</p></div>
+                                <div class="skill-type">
+                                    <p>English</p>
+                                </div>
                             </div>
                             <div class="image-type">
                                 <div class="skill-image"> <img src="./images/figma.png" alt="figma-icon"></div>
-                                <div class="skill-type"> <p>Yoruba</p></div>
+                                <div class="skill-type">
+                                    <p>Yoruba</p>
+                                </div>
                             </div>
                             <div class="image-type">
                                 <div class="skill-image"> <img src="./images/git.png" alt="git-icon"></div>
-                                <div class="skill-type"> <p>Hausa</p></div>
+                                <div class="skill-type">
+                                    <p>Hausa</p>
+                                </div>
                             </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- main section 4 -->
-        <section class="main-section4" id="projects">
-            <div class="h2-container4">
-                <div class="main-section4-th"><h2>Projects</h2></div>
-            </div>            
-            <!-- <div class="section4-container container">
-                <div class="done-projects">
-                    <div class="project-pic"> 
-                        <div>
-                            <img src="./images/projects-default.jpg" alt="food-pic">
-                        </div>
-                    </div>
-                    
-                    <div class="project-detials">
-                        <h3>Project Title</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis minus et nostrum facilis aliquid deleniti soluta quia ipsum quaerat laboriosam...</p>
-                        <div class="source-view">
-                            <div class="margin-bottom"> <a href="#"> <i class="far fa-file-code"></i> Source Code </a> </div>
-                            <div> <a href="#"> <i class="fas fa-laptop"></i> View Demo </a> </div>
-                        </div>
-
+            <!-- main section 4 -->
+            <section class="main-section4" id="projects">
+                <div class="h2-container4">
+                    <div class="main-section4-th">
+                        <h2>Projects</h2>
                     </div>
                 </div>
-                <div class="done-projects">
-                    <div class="project-pic"> 
-                        <div>
-                            <img src="./images/projects-default.jpg" alt="food-pic">
+                <!-- <div class="section4-container container">
+                    <div class="done-projects">
+                        <div class="project-pic"> 
+                            <div>
+                                <img src="./images/projects-default.jpg" alt="food-pic">
+                            </div>
+                        </div>
+                        
+                        <div class="project-detials">
+                            <h3>Project Title</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis minus et nostrum facilis aliquid deleniti soluta quia ipsum quaerat laboriosam...</p>
+                            <div class="source-view">
+                                <div class="margin-bottom"> <a href="#"> <i class="far fa-file-code"></i> Source Code </a> </div>
+                                <div> <a href="#"> <i class="fas fa-laptop"></i> View Demo </a> </div>
+                            </div>
+
                         </div>
                     </div>
-                    
-                    <div class="project-detials">
-                        <h3>Project Title</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis minus et nostrum facilis aliquid deleniti soluta quia ipsum quaerat laboriosam...</p>
-                        <div class="source-view">
-                            <div class="margin-bottom"> <a href="#"> <i class="far fa-file-code"></i> Source Code </a> </div>
-                            <div> <a href="#"> <i class="fas fa-laptop"></i> View Demo </a> </div>
+                    <div class="done-projects">
+                        <div class="project-pic"> 
+                            <div>
+                                <img src="./images/projects-default.jpg" alt="food-pic">
+                            </div>
                         </div>
+                        
+                        <div class="project-detials">
+                            <h3>Project Title</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis minus et nostrum facilis aliquid deleniti soluta quia ipsum quaerat laboriosam...</p>
+                            <div class="source-view">
+                                <div class="margin-bottom"> <a href="#"> <i class="far fa-file-code"></i> Source Code </a> </div>
+                                <div> <a href="#"> <i class="fas fa-laptop"></i> View Demo </a> </div>
+                            </div>
 
+                        </div>
+                    </div>
+                    <div class="done-projects">
+                        <div class="project-pic"> 
+                            <div>
+                                <img src="./images/projects-default.jpg" alt="food-pic">
+                            </div>
+                        </div>
+                        
+                        <div class="project-detials">
+                            <h3>Project Title</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis minus et nostrum facilis aliquid deleniti soluta quia ipsum quaerat laboriosam...</p>
+                            <div class="source-view">
+                                <div class="margin-bottom"> <a href="#"> <i class="far fa-file-code"></i> Source Code </a> </div>
+                                <div> <a href="#"> <i class="fas fa-laptop"></i> View Demo </a> </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div> -->
+                <div class="project-container project-index">
+
+                    <div class="loop-project">
+                        <a href="">
+                            <div class="project-img">
+                                <img src="./images/KSCODE.png" alt="food-pic">
+                            </div>
+                        </a>
+
+                        <div class="project-detials">
+                            <h2>Color Flipper</h2>
+                            <a href="https://kingsosu.github.io/Color-Flipper/index.html"
+                                target="_blank">kingsosu.github.io/Color-Flipper/</a>
+                        </div>
                     </div>
                 </div>
-                <div class="done-projects">
-                    <div class="project-pic"> 
-                        <div>
-                            <img src="./images/projects-default.jpg" alt="food-pic">
-                        </div>
-                    </div>
-                    
-                    <div class="project-detials">
-                        <h3>Project Title</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis minus et nostrum facilis aliquid deleniti soluta quia ipsum quaerat laboriosam...</p>
-                        <div class="source-view">
-                            <div class="margin-bottom"> <a href="#"> <i class="far fa-file-code"></i> Source Code </a> </div>
-                            <div> <a href="#"> <i class="fas fa-laptop"></i> View Demo </a> </div>
-                        </div>
 
+                <!-- see work links -->
+                <div class="see-works">
+                    <div>
+                        <p><a href="./project.html" id="project-links">See other works &nbsp;&nbsp;<i class="bx bx-arrow-back"></i></a></p>
                     </div>
                 </div>
-            </div> -->
-            <div class="project-container project-index">
+            </section>
 
-                <div class="loop-project">
-                    <a href="">
-                        <div class="project-img">
-                            <img src="./images/KSCODE.png" alt="food-pic">
+            <!-- main section 5 -->
+            <section class="main-section5" id="milestones">
+                <div class="h2-container5">
+                    <div class="main-section5-th">
+                        <h2>Special Milestones</h2>
+                    </div>
+                </div>
+                <div class="section5-container container">
+                    <div class="education edu-one">
+                        <div class="date">
+                            <p> <i class="fas fa-calendar"></i> 13th October, 2022</p>
                         </div>
-                    </a>
-    
-                    <div class="project-detials">
-                        <h2>Color Flipper</h2>
-                        <a href="https://kingsosu.github.io/Color-Flipper/index.html" target="_blank">kingsosu.github.io/Color-Flipper/</a>
-                    </div>               
+                        <div class="education-detials">
+                            <p class="course-name"> <i class="fas fa-graduation-cap"></i> Undergraduate BSc (Hons) in
+                                Computer Science </p> <br>
+                            <p class="school-name"> <i class="fas fa-school"></i> University of Maiduguri</p> <br>
+                            <p class="education-write">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim harum
+                                explicabo accusantium dolorem quam placeat dolores iure necessitatibus exercitationem
+                                dolor...</p>
+                        </div>
+                    </div>
+                    <div class="education edu-two">
+                        <div class="date">
+                            <p> <i class="fas fa-calendar"></i> 13th October, 2018</p>
+                        </div>
+                        <div class="education-detials">
+                            <p class="course-name"> <i class="fas fa-graduation-cap"></i> Senior Secondary School
+                                Certificate </p> <br>
+                            <p class="school-name"> <i class="fas fa-school"></i> Ansar-ud-Deen College</p> <br>
+                            <p class="education-write">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim harum
+                                explicabo accusantium dolorem quam placeat dolores iure necessitatibus exercitationem
+                                dolor...</p>
+                        </div>
+                    </div>
+                    <div class="education edu-three">
+                        <div class="date">
+                            <p> <i class="fas fa-calendar"></i> 13th October, 2015</p>
+                        </div>
+                        <div class="education-detials">
+                            <p class="course-name"> <i class="fas fa-graduation-cap"></i> Junior Senior Secondary
+                                Certificate </p> <br>
+                            <p class="school-name"> <i class="fas fa-school"></i> Victory College Ikare</p> <br>
+                            <p class="education-write">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim harum
+                                explicabo accusantium dolorem quam placeat dolores iure necessitatibus exercitationem
+                                dolor...</p>
+                        </div>
+                    </div>
+                    <div class="education edu-four">
+                        <div class="date">
+                            <p> <i class="fas fa-calendar"></i> 13th October, 2012</p>
+                        </div>
+                        <div class="education-detials">
+                            <p class="course-name"> <i class="fas fa-graduation-cap"></i> First School Leaving Certificate
+                            </p> <br>
+                            <p class="school-name"> <i class="fas fa-school"></i> Auntie Bisi Primary School</p> <br>
+                            <p class="education-write">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim harum
+                                explicabo accusantium dolorem quam placeat dolores iure necessitatibus exercitationem
+                                dolor...</p>
+                        </div>
+                    </div>
                 </div>
-            </div> 
+            </section>
 
-            <!-- see work links -->
-            <div class="see-works">
-                <div>
-                    <p><a href="./project.html">See other works &nbsp;&nbsp;<i class="bx bx-arrow-back"></i></a></p>
+        </main>
+
+        <footer class="exceed footer hide-content" id="contact">
+            <section class="footer-section1">
+                <div class="h2-container1">
+                    <div class="footer-section1-th">
+                        <h2>Contact</h2>
+                    </div>
                 </div>
-            </div>
-        </section>        
+                <div class="footer1-container container">
+                    <div class="text">
+                        <p> Call or write <span>anytime</span></p>
+                    </div>
+                    <div class="into-pic">
+                        <div class="contact-info">
+                            <form action="https://formspree.io/f/mbjvebgz" method="POST" name="submit-message"
+                                id="submit-message" enctype="multipart/form-data">
+                                <label for="fullname">Full Name</label> <br>
+                                <input type="text" name="fullname" id="fullname"> <br> <br>
+
+                                <label for="email">Email</label> <br>
+                                <input type="email" name="email" id="email"> <br> <br>
+
+                                <label for="message">Message</label> <br>
+                                <textarea name="message" id="message"></textarea> <br> <br> <br>
+
+                                <button type="submit" name="button" id="submitButton">
+                                    <i class="fas fa-paper-plane"></i> &nbsp;Send Message
+                                    <i class="fas fa-spinner fa-spin" id="loadingIcon" style="display: none;"></i>
+                                </button>
+                                
+                            </form>
+                        </div>
+                        <div class="contact-care">
+                            <img src="./images/care.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="successModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <i class='bx bxs-badge-check'></i>
+                    <p id="thank-you">Thank you for your message!</p>
+                    <p>I appreciate your interest. I'II get back to you soon!</p>
+                    <button id="backButton"><i class='bx bx-chevron-left'></i>&nbsp;&nbsp; Back</button>
+                </div>
+            </section>
+
+            <section id="errorModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <i class='bx bxs-error'></i>
+                    <p id="errorText ">There was a problem submitting these message.</p>
+                    <button id="backButton"><i class='bx bx-arrow-back'> Back</i></button>
+                </div>
+            </section>
+
+            <section class="footer-section2">
+                <div class="links-footer-container">
+                    <div class="links-footer">
+                        <p>Quick Links</p>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#milestones">Milestones</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="links-footer">
+                        <p>Support</p>
+                        <ul>
+                            <li><a href="">Terms & Conditions</a></li>
+                            <li><a href="">Privacy</a></li>
+                            <li><a href="">Cookies preferences <i class="fas fa-github"></i></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="links-footer boxthree">
+                        <p>Get in touch</p>
+                        <ul class="footer-social">
+                            <li>
+                                <a href="https://github.com/Kingsosu" target="_blank">
+                                    <i class='bx bxl-github'></i>&nbsp; Git Hub
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" target="_blank"><i class='bx bxl-linkedin-square'>
+                                    </i></i>&nbsp; Linkedin
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://x.com/KingsOsuolale?t=7C4YGckyUbn0dCrDL72sdw&s=08" target="_blank">
+                                    <i class="fa fa-twitter-square"></i>&nbsp; Twitter
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="https://api.whatsapp.com/send?phone=2348154589195&text=Hi%2C%20I%27m%20.......%20I%20will%20like%20to%20work%20with%20you....."
+                                    target="_blank">
+                                    <i class="fab fa-whatsapp-square"></i>&nbsp; Whatsapp
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/kings.osuolale?mibextid=ZbWKwL" target="_blank">
+                                    <i class='bx bxl-facebook-square'></i>&nbsp; Facebook
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="footer-section3">
+                <p>&copy; Kings Osuolale <span id="date"></span></p>
+            </section>
+        </footer>
         
-        <!-- main section 5 -->
-        <section class="main-section5" id="milestones">
-            <div class="h2-container5">
-                <div class="main-section5-th"><h2>Special Milestones</h2></div>
-            </div>            
-            <div class="section5-container container">
-                <div class="education edu-one">
-                    <div class="date">
-                        <p> <i class="fas fa-calendar"></i> 13th October, 2022</p>
-                    </div>
-                    <div class="education-detials">
-                        <p class="course-name"> <i class="fas fa-graduation-cap"></i> Undergraduate BSc (Hons) in Computer Science </p> <br>
-                        <p class="school-name"> <i class="fas fa-school"></i> University of Maiduguri</p> <br>
-                        <p class="education-write">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim harum explicabo accusantium dolorem quam placeat dolores iure necessitatibus exercitationem dolor...</p>
-                    </div>
-                </div>
-                <div class="education edu-two">
-                    <div class="date">
-                        <p> <i class="fas fa-calendar"></i> 13th October, 2018</p>
-                    </div>
-                    <div class="education-detials">
-                        <p class="course-name"> <i class="fas fa-graduation-cap"></i> Senior Secondary School Certificate </p> <br>
-                        <p class="school-name"> <i class="fas fa-school"></i> Ansar-ud-Deen College</p> <br>
-                        <p class="education-write">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim harum explicabo accusantium dolorem quam placeat dolores iure necessitatibus exercitationem dolor...</p>
-                    </div>
-                </div>
-                <div class="education edu-three">
-                    <div class="date">
-                        <p> <i class="fas fa-calendar"></i> 13th October, 2015</p>
-                    </div>
-                    <div class="education-detials">
-                        <p class="course-name"> <i class="fas fa-graduation-cap"></i> Junior Senior Secondary Certificate </p> <br>
-                        <p class="school-name"> <i class="fas fa-school"></i> Victory College Ikare</p> <br>
-                        <p class="education-write">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim harum explicabo accusantium dolorem quam placeat dolores iure necessitatibus exercitationem dolor...</p>
-                    </div>
-                </div>
-                <div class="education edu-four">
-                    <div class="date">
-                        <p> <i class="fas fa-calendar"></i> 13th October, 2012</p>
-                    </div>
-                    <div class="education-detials">
-                        <p class="course-name"> <i class="fas fa-graduation-cap"></i> First School Leaving Certificate </p> <br>
-                        <p class="school-name"> <i class="fas fa-school"></i> Auntie Bisi Primary School</p> <br>
-                        <p class="education-write">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim harum explicabo accusantium dolorem quam placeat dolores iure necessitatibus exercitationem dolor...</p>
-                    </div>
-                </div>
-            </div>
-        </section>        
-        
-    </main>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script src="./JavaScript/script.js" async></script>
+    </body>
 
-    <footer class="exceed footer" id="contact">
-        <section class="footer-section1">
-            <div class="h2-container1">
-                <div class="footer-section1-th"><h2>Contact</h2></div>
-            </div>            
-            <div class="footer1-container container">
-                <div class="text">
-                    <p> Call or write <span>anytime</span></p>
-                </div>
-                <div class="into-pic">
-                    <div class="contact-info">
-                        <form action="https://formspree.io/f/mbjvebgz" method="POST" name="submit-message" id="submit-message" enctype="multipart/form-data">
-                            <label for="fullname">Full Name</label> <br>
-                            <input type="text" name="fullname" id="fullname"> <br> <br>
-                            
-                            <label for="email">Email</label> <br>
-                            <input type="email" name="email" id="email"> <br> <br>
-                            
-                            <label for="message">Message</label> <br>
-                            <textarea name="message" id="message"></textarea> <br> <br> <br>
-
-                            <button type="submit" name="button"><i class="fas fa-paper-plane"></i> &nbsp;Send Message</button>
-                        </form>
-                    </div>
-                    <div class="contact-care">
-                        <img src="./images/care.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </section> 
-
-        <section id="successModal" class="modal">
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <i class='bx bxs-badge-check'></i>
-                <p id="thank-you">Thank you for your message!</p>
-                <p>We appreciate your interest.</p>
-                <button id="backButton"><i class='bx bx-chevron-left'></i>&nbsp;&nbsp; Back</button>
-            </div>
-        </section>
-
-        <section id="errorModal" class="modal">
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <i class='bx bxs-error'></i>
-                <p id="errorText ">There was a problem submitting these message.</p>
-                <button id="backButton"><i class='bx bx-arrow-back'> Back</i></button>
-            </div>
-        </section>
-
-        <section class="footer-section2">
-            <div class="links-footer-container">
-                <div class="links-footer">
-                    <p>Quick Links</p>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#milestones">Milestones</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-
-                <div class="links-footer">
-                    <p>Support</p>
-                    <ul>
-                        <li><a href="">Terms & Conditions</a></li>
-                        <li><a href="">Privacy</a></li>
-                        <li><a href="">Cookies preferences <i class="fas fa-github"></i></a></li>
-                    </ul>
-                </div>
-                
-                <div class="links-footer boxthree">
-                    <p>Get in touch</p>
-                    <ul class="footer-social">
-                        <li><a href="https://github.com/Kingsosu" target="_blank"><i class='bx bxl-github'></i>&nbsp; Git Hub</a></li>
-                        <li><a href="" target="_blank"><i class='bx bxl-linkedin-square'></i></i>&nbsp; Linkedin</a></li>
-                        <li><a href="https://x.com/KingsOsuolale?t=7C4YGckyUbn0dCrDL72sdw&s=08" target="_blank"><i class="fa fa-twitter-square"></i>&nbsp; Twitter</a></li>
-                        <li><a href="https://api.whatsapp.com/send?phone=2348154589195&text=Hi%2C%20I%27m%20.......%20I%20will%20like%20to%20work%20with%20you....." target="_blank"><i class="fab fa-whatsapp-square"></i>&nbsp; Whatsapp</a></li>
-                        <li><a href="https://www.facebook.com/kings.osuolale?mibextid=ZbWKwL" target="_blank"><i class='bx bxl-facebook-square'></i>&nbsp; Facebook</a></li>
-                    </ul>
-                </div>   
-            </div>
-        </section>
-        <section class="footer-section3">
-            <p>&copy; Kings Osuolale <span id="date"></span></p>
-        </section>
-    </footer>
-
-    <script src="./JavaScript/script.js"></script>
-</body>
 </html>

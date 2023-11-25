@@ -3,23 +3,30 @@
 <head>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="./css/style.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">   
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
 
-    <link rel="icon" href="./images/KS-ICON.png">
+    <link rel="preload" href="./css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="./JavaScript/script.js" as="script">
+    <link rel="icon" href="./images/KS-ICON.png" loading="lazy">
 
     <!-- title -->
     <title>Kings Osuolale - Projects</title>
-
-
-
 </head>
+
 <body style="background-color:#e6f2ff">
-    <header class="exceed">
+    <div class="loading-page" id="loading-page">
+        <svg id="svg" xmlns="http://www.w3.org/2000/svg" width="176" height="83" viewBox="0 0 176 83" fill="none">
+            <path id="loaderPath" fill-rule="evenodd" clip-rule="evenodd" d="M145.741 50.6373H96.5923L75.6592 25.6373L96.5923 0.637268H174.659L160.187 18.3935L105.678 18.401L99.6188 25.6373L105.678 32.8736L154.833 32.8811L175.733 57.842L154.798 82.8421H122.344L107.944 65.0859L145.714 65.0783L151.773 57.842L145.741 50.6373Z" fill="#001F40"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.697754 0.855274H21.2174V39.4829L53.998 0.855274L83.295 0.637268L57.5432 31.0935L100.773 82.7594L74.4304 82.7428L44.1005 46.3704L21.2174 73.0739V73.2904L13.3797 82.8421H0.697754V0.855274Z" fill="#001F40"/>
+        </svg>          
+        <div class="loading-naming-container">
+            <p>code</p>
+        </div>
+    </div>
+
+    <header class="exceed hide-content">
         <!-- Header navigation bar -->
         <section class="header-section1">
             <nav class="container-padding">
@@ -28,7 +35,7 @@
                 </div>
                 <ul>
                     <button class="cancel"><i class='bx bx bx-x'></i></button>
-                    <li><a href="./index.html">HOME</a></li>
+                    <li><a href="index.html" target="_blank">HOME</a></li>
                     <li><a href="#contact">CONTACT</a></li>
 
                     <div class="developer">
@@ -48,14 +55,13 @@
 
     </header>
 
-    <main class="exceed" style="margin-top: 50px;">
+    <main class="exceed hide-content" style="margin-top: 50px;">
         <section class="pm-section1">
             <div class="h2-container4">
                 <h3>Selected work I've taken on in the past</h3>
             </div>     
 
             <div class="project-container">
-
                 <div class="loop-project">
                     <a href="">
                         <div class="project-img">
@@ -109,7 +115,7 @@
         
     </main>
 
-    <footer class="exceed footer" id="contact">
+    <footer class="exceed footer hide-content" id="contact">
         <section class="footer-section2">
             <div class="links-footer-container">
                 <div class="links-footer">
@@ -136,11 +142,33 @@
                 <div class="links-footer boxthree">
                     <p>Get in touch</p>
                     <ul class="footer-social">
-                        <li><a href="https://github.com/Kingsosu" target="_blank"><i class='bx bxl-github'></i>&nbsp; Git Hub</a></li>
-                        <li><a href="" target="_blank"><i class='bx bxl-linkedin-square'></i></i>&nbsp; Linkedin</a></li>
-                        <li><a href="https://x.com/KingsOsuolale?t=7C4YGckyUbn0dCrDL72sdw&s=08" target="_blank"><i class="fa fa-twitter-square"></i>&nbsp; Twitter</a></li>
-                        <li><a href="https://api.whatsapp.com/send?phone=2348154589195&text=Hi%2C%20I%27m%20.......%20I%20will%20like%20to%20work%20with%20you....." target="_blank"><i class="fab fa-whatsapp-square"></i>&nbsp; Whatsapp</a></li>
-                        <li><a href="https://www.facebook.com/kings.osuolale?mibextid=ZbWKwL" target="_blank"><i class='bx bxl-facebook-square'></i>&nbsp; Facebook</a></li>
+                        <li>
+                            <a href="https://github.com/Kingsosu" target="_blank">
+                                <i class='bx bxl-github'></i>&nbsp; Git Hub
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" target="_blank"><i class='bx bxl-linkedin-square'>
+                                </i></i>&nbsp; Linkedin
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://x.com/KingsOsuolale?t=7C4YGckyUbn0dCrDL72sdw&s=08" target="_blank">
+                                <i class="fa fa-twitter-square"></i>&nbsp; Twitter
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://api.whatsapp.com/send?phone=2348154589195&text=Hi%2C%20I%27m%20.......%20I%20will%20like%20to%20work%20with%20you....."
+                                target="_blank">
+                                <i class="fab fa-whatsapp-square"></i>&nbsp; Whatsapp
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/kings.osuolale?mibextid=ZbWKwL" target="_blank">
+                                <i class='bx bxl-facebook-square'></i>&nbsp; Facebook
+                            </a>
+                        </li>
                     </ul>
                 </div>   
             </div>
